@@ -1,7 +1,3 @@
-//import 'dart:math';
-
-import 'dart:math';
-
 import 'package:flutter/material.dart';
 import 'package:mirror/web.dart';
 
@@ -19,7 +15,7 @@ class _moviepageState extends State<moviepage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Platform Menu'),
+        title: Text('Platform___Menu'),
         centerTitle: true,
       ),
       body: Card(
@@ -47,6 +43,7 @@ class _moviepageState extends State<moviepage> {
                 )
                 .toList()),
       ),
+      backgroundColor: Colors.black,
     );
   }
 }

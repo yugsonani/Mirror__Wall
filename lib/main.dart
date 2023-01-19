@@ -1,4 +1,3 @@
-//import 'dart:html';
 import 'dart:io';
 
 import 'package:flutter/material.dart';
@@ -31,20 +30,22 @@ class _eduState extends State<edu> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Menu'),
+        title: Text('MENU'),
         centerTitle: true,
         automaticallyImplyLeading: false,
       ),
       body: Container(
-        color: Colors.black26,
+        color: Colors.black,
         child: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               GestureDetector(
                 onTap: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => educationpage()));
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const educationpage()));
                 },
                 child: Container(
                   height: 200,
@@ -55,34 +56,36 @@ class _eduState extends State<edu> {
                     style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
                   ),
                   decoration: BoxDecoration(
-                    color: Colors.red.shade400,
-                    borderRadius: BorderRadius.circular(25),
+                    color: Colors.orange,
+                    borderRadius: BorderRadius.circular(50),
                   ),
                 ),
               ),
               GestureDetector(
                 onTap: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => moviepage()));
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const moviepage()));
                 },
                 child: Container(
                   height: 200,
                   width: 300,
                   alignment: Alignment.center,
-                  child: Text(
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(50),
+                  ),
+                  child: const Text(
                     'Movies',
                     style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
-                  ),
-                  decoration: BoxDecoration(
-                    color: Colors.green.shade400,
-                    borderRadius: BorderRadius.circular(25),
                   ),
                 ),
               ),
               GestureDetector(
                 onTap: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => webpage()));
+                      MaterialPageRoute(builder: (context) => const webpage()));
                   setState(() {
                     Global.weburl = 'https://www.google.co.in';
                   });
@@ -91,13 +94,13 @@ class _eduState extends State<edu> {
                   height: 200,
                   width: 300,
                   alignment: Alignment.center,
-                  child: Text(
+                  decoration: BoxDecoration(
+                    color: Colors.green,
+                    borderRadius: BorderRadius.circular(50),
+                  ),
+                  child: const Text(
                     'Web',
                     style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
-                  ),
-                  decoration: BoxDecoration(
-                    color: Colors.blue.shade400,
-                    borderRadius: BorderRadius.circular(25),
                   ),
                 ),
               ),

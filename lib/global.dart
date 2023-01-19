@@ -1,10 +1,5 @@
 class Global {
   static List educ = [
-    // {
-    //   'title': 'tile of web',
-    //   'image': 'path of web logo',
-    //   'url': 'web address url',
-    // },
     {
       'title': 'Javapoint',
       'image': 'assets/images/java.png',
@@ -27,11 +22,6 @@ class Global {
     }
   ];
   static List movieinfo = [
-    // {
-    //   'title': 'tile of web',
-    //   'image': 'path of web logo',
-    //   'url': 'web address url',
-    // }
     {
       'title': 'Netflix',
       'image':

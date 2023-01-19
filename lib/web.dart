@@ -17,6 +17,7 @@ class _webpageState extends State<webpage> {
   String pageurl = '${Global.weburl}';
 
   List allBookmarks = [];
+
   @override
   void initState() {
     super.initState();
@@ -114,6 +115,7 @@ class _webpageState extends State<webpage> {
           allBookmarks.add(uri!.toString());
         },
       ),
+      backgroundColor: Colors.black,
     );
   }
 }

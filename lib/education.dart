@@ -1,7 +1,3 @@
-//import 'dart:math';
-
-import 'dart:math';
-
 import 'package:flutter/material.dart';
 import 'package:mirror/web.dart';
 
@@ -19,7 +15,9 @@ class _educationpageState extends State<educationpage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Education Menu'),
+        title: const Text(
+          'Education',
+        ),
         centerTitle: true,
       ),
       body: Card(
@@ -29,8 +27,10 @@ class _educationpageState extends State<educationpage> {
                   (e) => Container(
                     child: GestureDetector(
                       onTap: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => webpage()));
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const webpage()));
                         setState(() {
                           Global.weburl = '${e['url']}';
                           print("${Global.weburl}");
